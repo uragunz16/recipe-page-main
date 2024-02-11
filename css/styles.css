@@ -38,15 +38,21 @@ body {
     justify-content: center;
     align-items: center;
 }
+/*  */
+li {
+    list-style: none;
+}
+
 /* THIS IS THE CONTAINER */
 .card {
-    margin: 5.1rem auto;
+    margin: 12.3rem auto;
     padding: 2rem;
     width: 73.6rem;
     height: 1708px;
     border-radius: 2.4rem;
     background-color: hsl(0, 0%, 100%);/*white color*/
 }
+/* for image */
 .card__omellete {
     margin: 2rem;
 }
@@ -60,6 +66,7 @@ body {
     border-radius: 1.2rem;
     margin-bottom: 3rem;
 }
+
 /* this is the heading */
 .card__heading {
     font-size: 4rem;
@@ -73,23 +80,19 @@ body {
     margin-bottom: 3rem;
 }
 /* this is the Preparation */
-.card__preparation {
-    margin-left: 2rem;
-    background-color:hsl(330, 100%, 98%);
-
-}
 .card__list {
     font-size: 1.4rem;
     padding-right: 2rem;
 }
-.preparation {    
+.card__preparation {    
     border-radius: 2rem;
     background-color:hsl(330, 100%, 98%);
     font-size: 2rem;
     height: 19.5vh;
     padding-top: 0.2rem;
+    margin-bottom: 3rem;
 }
-.preparation h3 {
+.card__preparation h3 {
     color: hsl(332, 51%, 32%);
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
@@ -97,15 +100,14 @@ body {
     margin: 2rem  0 0 3rem;
     padding-bottom: 2rem;
 }
-.preparation__heading {
+.card__preparation--heading {
   /*   padding-left: 2rem; Not Working */
     margin: 1rem 0;
 }
-.preparation__text {
+.card__preparation--text {
     padding-left: 3rem;
-    list-style: none;
 }
-.preparation__list {
+.card__preparation--list {
     /* color: hsl(353.33deg 3.96% 44.51%); i tray this but the letter is different */
     color: hsl(30, 10%, 34%);
     display: flex;
@@ -114,15 +116,52 @@ body {
     margin-left: 0.9rem;
     padding-bottom: 1.2rem;
 }
-.preparation__list i {
+.card__preparation--list i {
     font-size: 0.4rem;
     color: hsl(332, 51%, 32%);
     align-self: center;
     margin-right: 3rem;
     padding-top: 0.3rem;
 }
-.preparation__list span {
+.card__preparation--list span {
     color: hsl(30, 10%, 34%);
     font-weight: 700;
     margin-right: 0.5rem;
+}
+/* this is for ingredients */
+.card__ingredients {
+    font-size: 1.5rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 2.3rem;
+}
+.card__ingredients--header {
+    color: hsl(14, 45%, 36%); 
+    font-size: 2.7rem;
+    font-weight: 400;
+    margin-bottom: 1.7rem;
+   
+}
+.card__ingredients--text {    
+    align-self: center;
+    margin-right: 3rem;
+    padding-top: 0.3rem;
+}
+.card__ingredients--text p { 
+    color: hsl(30, 10%, 34%);
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+}
+.card__ingredients--list {
+    color: hsl(30, 10%, 34%);
+    display: flex;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 1.3rem;
+}
+.card__ingredients--list i{
+    font-size: 0.4rem;
+    color: hsl(14, 45%, 36%);
+    align-self: center;
+    padding-top: 0.3rem;
+    padding-left: 1rem;
 }
