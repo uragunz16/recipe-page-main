@@ -9,15 +9,12 @@
   <!-- link to css -->
   <link rel="stylesheet" href="css/styles.css">
   
-  <!-- this is link for fonts Outfit -->
+  <!-- this is link for fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap" rel="stylesheet">
 
-  <!-- this is link for Youg Serif fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+ 
   
   <title>Frontend Mentor | Recipe page</title>
 
@@ -30,25 +27,24 @@
 <body>
   <main class="card">
     <div class="card__omellete">
-      <div class="card__omellete--box">
-        <img src="./assets/images/image-omelette.jpeg" alt="omellete" class="card__omellete--image"> 
-      </div>
+      <img src="./assets/images/image-omelette.jpeg" alt="omellete" class="card__image"> 
       <!-- this is a heading primary -->
-      <h1 class="card__omellete--heading">Simple Omelette Recipe</h1>
+      <h1 class="card__heading">Simple Omelette Recipe</h1>
         <p class="card__omellete--text">
           An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
           to perfection, optionally filled with your choice of cheese, vegetables, or meats.
         </p>
         <!-- Preparation -->
-        <ul class="card__preparation">
-          <li class="card__preparation--list card__preparation--header">Preparation</li><!-- this is the sub-heading secondary -->
-          <li class="card__preparation--list">Total: Approximately 10 Minutes</li>
-          <li class="card__preparation--list">Preparation: 5 Minutes</li>
-          <li class="card__preparation--list">Cooking: 5 Minutes</li>
-        </ul>
+        <div class="preparation">
+          <h3 class="preparation___heading">Preparation time</h3>
+          <ul class="preparation__text">
+            <li class="preparation__list"><i class="fa-solid fa-circle"></i><span>Total:</span>Approximately 10 minutes</li>
+            <li class="preparation__list"><i class="fa-solid fa-circle"></i><span>Preparation:</span>5 minutes</li>
+            <li class="preparation__list"><i class="fa-solid fa-circle"></i><span>Cooking:</span> 5 minutes</li>
+          </ul>
+        </div>
         <!-- Ingredients List -->
-        <ul>
-
+        <ul class="card__ingredients">
           <li class="card__ingredients">Ingredients</li><!-- this is the heading secondary -->
           <li class="card__ingredients">2-3 large eggs</li>
           <li class="card__ingredients">Salt, to taste</li>
@@ -70,7 +66,7 @@
           <li class="card__instruction">Enjoy: Serve hot, with additional salt and pepper if needed.</li>
         </ol>
         <!-- Nutrition -->
-        <div class="card__nutrition">
+        <div class="nutrition">
           <div class="card__nutrition--serving">
             <p>Calories</p>
             <p>Carbs</p>
@@ -90,5 +86,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <!-- this is link for font awesome -->
+  <script src="https://kit.fontawesome.com/92a4f85756.js" crossorigin="anonymous"></script>
 </body>
 </html>

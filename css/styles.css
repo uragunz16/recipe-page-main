@@ -8,6 +8,10 @@
 - Wenge Brown: hsl(30, 10%, 34%)
 - Dark Charcoal: hsl(24, 5%, 18%)
 */
+/* this is a helper for maring left */
+.card__margin-left {
+    margin-left: 2rem;
+}
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +23,12 @@ html{
 
 h1, h2, h3 {
     font-family: 'Young Serif', serif;
+    color: hsl(24, 5%, 18%); /*Dark Charcoal color*/
+}
+p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    color: hsl(30, 10%, 34%);
 }
 body {
     box-sizing: border-box;
@@ -31,34 +41,88 @@ body {
 /* THIS IS THE CONTAINER */
 .card {
     margin: 5.1rem auto;
-    width: 736px;
+    padding: 2rem;
+    width: 73.6rem;
     height: 1708px;
     border-radius: 2.4rem;
     background-color: hsl(0, 0%, 100%);/*white color*/
 }
 .card__omellete {
     margin: 2rem;
-    /* min-width: 73.6%; */
 }
 .card__omellete--box {
+    height: 33rem;
     padding: 2rem;
 }
-
-.card__omellete--image {
+.card__image {
     width: 100%;
-    height: 100%;
-    border-radius: 2.4rem;
+    height: 32.8vh;
+    border-radius: 1.2rem;
+    margin-bottom: 3rem;
 }
 /* this is the heading */
-.card__omellete--heading {
-    font-size: 4.5rem;
-    font-family: 'Young Serif', serif;
-    font-weight: 700;
-    color: hsl(24, 5%, 18%); /*Dark Charcoal color*/
-    margin-left: 2rem;
-    padding-top: 1.3rem;
+.card__heading {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
 }
+.card__omellete--text {
+    font-size: 1.5rem;
+    letter-spacing: 0.6px;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+}
+/* this is the Preparation */
+.card__preparation {
+    margin-left: 2rem;
+    background-color:hsl(330, 100%, 98%);
 
-.card__omellette--text {
-    font-family: ;
+}
+.card__list {
+    font-size: 1.4rem;
+    padding-right: 2rem;
+}
+.preparation {    
+    border-radius: 2rem;
+    background-color:hsl(330, 100%, 98%);
+    font-size: 2rem;
+    height: 17.5vh;
+    padding-top: 0.2rem;
+}
+.preparation h3 {
+    color: hsl(332, 51%, 32%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 2rem  0 0 3rem;
+    padding-bottom: 2rem;
+}
+.preparation__heading {
+  /*   padding-left: 2rem; Not Working */
+    margin: 1rem 0;
+}
+.preparation__text {
+    padding-left: 3rem;
+    list-style: none;
+}
+.preparation__list {
+    /* color: hsl(353.33deg 3.96% 44.51%); i tray this but the letter is different */
+    color: hsl(30, 10%, 34%);
+    display: flex;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    margin-left: 0.9rem;
+    padding-bottom: 1.2rem;
+}
+.preparation__list i {
+    font-size: 0.4rem;
+    color: hsl(332, 51%, 32%);
+    align-self: center;
+    margin-right: 3rem;
+    padding-top: 0.3rem;
+}
+.preparation__list span {
+    color: hsl(30, 10%, 34%);
+    font-weight: 700;
+    margin-right: 0.5rem;
 }
