@@ -140,10 +140,25 @@ li {
     font-weight: 400;
     margin-bottom: 1.7rem;   
 }
+
+.card__ingredients--list {
+    color: hsl(30, 10%, 34%);
+    display: flex;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 1.3rem;
+}
 .card__ingredients--text {    
-    align-self: center;
+    /* align-self: center; not sure of this */
     margin-right: 3rem;
     padding-top: 0.3rem;
+}
+
+.card__ingredients--list i{
+    font-size: 0.4rem;
+    color: hsl(14, 45%, 36%);
+    align-self: center;
+    padding-top: 0.3rem;
+    padding-left: 1rem;
 }
 .card__ingredients--text p { 
     color: hsl(30, 10%, 34%);
@@ -151,16 +166,48 @@ li {
     font-size: 1.5rem;
     margin-left: 2.5rem;
 }
-.card__ingredients--list {
-    color: hsl(30, 10%, 34%);
-    display: flex;
-    font-family: 'Outfit', sans-serif;
-    margin-bottom: 1.3rem;
+
+/* Instruction */
+.card__instruction {
+    font-size: 1.5rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 2.3rem;
 }
-.card__ingredients--list i{
-    font-size: 0.4rem;
-    color: hsl(14, 45%, 36%);
-    align-self: center;
+.card__instruction--header {
+    color: hsl(14, 45%, 36%); 
+    font-size: 2.7rem;
+    font-weight: 400;
+    margin-top: 3rem;
+    /* margin-bottom: 1.7rem; */
+}
+.card__instruciton--text {
+    /* align-self: center; */
+    /* display: inline-block; */
+    margin-right: 3rem;
     padding-top: 0.3rem;
-    padding-left: 1rem;
+}
+.card__instruction--list {
+    display: flex;
+    gap: 2.5rem;
+    line-height: 20px;
+}
+.card__instruction--number {
+    align-self: center;
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+.card__instruction--list p {
+    padding-top: 1.7rem;
+}
+
+/* this is for Nutrition styles */
+
+.card__nutrition {
+    margin-top: 3rem;
+}
+.card__nutrition--header {
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+    font-size: 2.7rem;
+    margin-bottom: ;
 }
