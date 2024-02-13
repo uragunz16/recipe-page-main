@@ -27,16 +27,14 @@ h1, h2, h3 {
 }
 p {
     font-family: 'Outfit', sans-serif;
+    font-size: 1.7rem;
     font-weight: 300;
     color: hsl(30, 10%, 34%);
 }
 body {
     box-sizing: border-box;
     background-color: hsl(30, 54%, 90%); /*Eggshell color*/
-    height: 100;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    height: 100%;
 }
 /*  */
 li {
@@ -108,11 +106,10 @@ li {
     padding-left: 3rem;
 }
 .card__preparation--list {
-    /* color: hsl(353.33deg 3.96% 44.51%); i tray this but the letter is different */
+    /* color: hsl(353.33deg 3.96% 44.51%); i try this but the letter is different */
     color: hsl(30, 10%, 34%);
-    display: flex;
+    /* display: flex; */
     font-family: 'Outfit', sans-serif;
-    font-size: 1.5rem;
     margin-left: 0.9rem;
     padding-bottom: 1.2rem;
 }
@@ -157,13 +154,11 @@ li {
     font-size: 0.4rem;
     color: hsl(14, 45%, 36%);
     align-self: center;
-    padding-top: 0.3rem;
+    padding-top: 0.2rem;
     padding-left: 1rem;
 }
 .card__ingredients--text p { 
-    color: hsl(30, 10%, 34%);
     display: inline-block;
-    font-size: 1.5rem;
     margin-left: 2.5rem;
 }
 
@@ -180,7 +175,7 @@ li {
     margin-top: 3rem;
     /* margin-bottom: 1.7rem; */
 }
-.card__instruciton--text {
+.card__instruction--text {
     /* align-self: center; */
     /* display: inline-block; */
     margin-right: 3rem;
@@ -212,33 +207,55 @@ li {
     margin-bottom: 2rem;
 }
 .card__nutrition--paragraph {
-    font-size: 1.6rem;
-    font-weight: 400;
+    /* font-size: 1.6rem;
+    font-weight: 400; */
     /* margin-bottom: 2rem; */
 }
 .card__nutrition--text {    
-    font-size: 2rem;
-}
-.card__nutrition--list .serving{
-    color: hsl(30, 10%, 34%);
-    margin-left: 3rem;
-}
-.card__nutrition--list .grams{
-    color: hsl(14, 45%, 36%);
-    font-size: 1.9rem;
-    font-weight: 700;
-    margin-right: 29.3rem;
+    /* font-size: 2rem; */
 }
 .card__nutrition--list {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.5rem; */
 }
 .card__nutrition--list:not(:last-child) {
-    border-bottom: 1px solid hsl(30, 18%, 87%);
+    /* border-bottom: 1px solid hsl(30, 18%, 87%); */
+}
+
+/* Grid Start Here */
+.card__nutrition {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+.card__nutrition--servings {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    /* margin-left: 1.7rem;
+    margin-top: 1rem; */
+    
+    padding-bottom: 1rem;
+}
+.card__nutrition--servings:not(:first-child){
+    margin-top: 1rem;
+}
+
+.card__nutrition--servings:not(:last-child) {
+
+    border-bottom: 0.1rem solid hsl(30, 18%, 87%);
+}
+
+.card__nutrition .serving {
+    margin-left: 3.3rem;
+}
+.card__nutrition .grams {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
 }
 
 /* mobile screen */
-
-@media 
