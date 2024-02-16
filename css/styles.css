@@ -36,7 +36,7 @@ body {
     background-color: hsl(30, 54%, 90%); /*Eggshell color*/
     height: 100%;
 }
-/*  */
+/* li reset */
 li {
     list-style: none;
 }
@@ -45,8 +45,7 @@ li {
 .card {
     margin: 12.3rem auto;
     padding: 2rem;
-    width: 38.8%;
-    /* height: 188rem; */
+    width: 73.6rem;
     border-radius: 2.4rem;
     background-color: hsl(0, 0%, 100%);/*white color*/
 }
@@ -85,7 +84,7 @@ li {
 .card__preparation {    
     border-radius: 2rem;
     background-color:hsl(330, 100%, 98%);
-    font-size: 2rem;
+    font-size: 1.7rem;
     height: 100%;
     padding-top: 0.2rem;
     margin-bottom: 3rem;
@@ -95,8 +94,7 @@ li {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
     font-size: 2rem;
-    margin: 2rem  0 0 3rem;
-    padding-bottom: 2rem;
+    margin: 2rem  0 2rem 3rem;
 }
 .card__preparation--heading {
   /*   padding-left: 2rem; Not Working */
@@ -105,10 +103,8 @@ li {
 .card__preparation--text {
     padding-left: 3rem;
 }
-.card__preparation--list {
-    /* color: hsl(353.33deg 3.96% 44.51%); i try this but the letter is different */
+.card__preparation--list {    
     color: hsl(30, 10%, 34%);
-    /* display: flex; */
     font-family: 'Outfit', sans-serif;
     margin-left: 0.9rem;
     padding-bottom: 1.2rem;
@@ -173,11 +169,8 @@ li {
     font-size: 2.7rem;
     font-weight: 400;
     margin-top: 3rem;
-    /* margin-bottom: 1.7rem; */
 }
 .card__instruction--text {
-    /* align-self: center; */
-    /* display: inline-block; */
     margin-right: 3rem;
     padding-top: 0.3rem;
 }
@@ -192,7 +185,7 @@ li {
     font-weight: 600;
 }
 .card__instruction--list p {
-    padding-top: 1.7rem;
+    margin: 1rem;
 }
 
 /* this is for Nutrition styles */
@@ -235,10 +228,7 @@ li {
 .card__nutrition--servings {
     display: grid;
     grid-template-columns: 50% 50%;
-    justify-content: center;
-    /* margin-left: 1.7rem;
-    margin-top: 1rem; */
-    
+    justify-content: center;    
     padding-bottom: 1rem;
 }
 .card__nutrition--servings:not(:first-child){
