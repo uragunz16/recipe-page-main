@@ -1,22 +1,13 @@
-/* 
-### Neutral
-
-- White: hsl(0, 0%, 100%)
-- Rose White: hsl(330, 100%, 98%)
-- Eggshell: hsl(30, 54%, 90%)
-- Light Grey: hsl(30, 18%, 87%)
-- Wenge Brown: hsl(30, 10%, 34%)
-- Dark Charcoal: hsl(24, 5%, 18%)
-*/
-/* this is a helper for maring left */
 .card__margin-left {
     margin-left: 2rem;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
+
 html{
     font-size: 62.5%;
 }
@@ -40,6 +31,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 /* li reset */
 li {
     list-style: none;
@@ -53,6 +45,7 @@ li {
     border-radius: 2.4rem;
     background-color: hsl(0, 0%, 100%);/*white color*/
 }
+
 /* for image */
 .card__omellete {
     margin: 2rem;
@@ -80,6 +73,7 @@ li {
     line-height: 2.5rem;
     margin-bottom: 3rem;
 }
+
 /* this is the Preparation */
 .card__list {
     font-size: 1.4rem;
@@ -101,7 +95,6 @@ li {
     margin: 2rem  0 1.5rem 3rem;
 }
 .card__preparation--heading {
-  /*   padding-left: 2rem; Not Working */
     margin: 1rem 0;
 }
 .card__preparation--text {
@@ -144,8 +137,7 @@ li {
     font-family: 'Outfit', sans-serif;
     margin-bottom: 1.3rem;
 }
-.card__ingredients--text {    
-    /* align-self: center; not sure of this */
+.card__ingredients--text { 
     margin-right: 3rem;
     padding-top: 0.3rem;
 }
@@ -193,7 +185,6 @@ li {
 }
 
 /* this is for Nutrition styles */
-
 .card__nutrition {
     margin-top: 3rem;
 }
@@ -203,6 +194,7 @@ li {
     font-size: 2.7rem;
     margin-bottom: 2rem;
 }
+
 /* Grid Start Here */
 .card__nutrition {
     font-family: 'Outfit', sans-serif;
@@ -210,7 +202,6 @@ li {
     font-weight: 400;
     color: hsl(30, 10%, 34%);
 }
-
 .card__nutrition--servings {
     display: grid;
     grid-template-columns: 50% 50%;
